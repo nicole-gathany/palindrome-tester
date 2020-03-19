@@ -4,10 +4,9 @@ function palindrome(str) {
   for (let i = 0; i < str.length; i++) {
     reverseArr.unshift(str.charAt(i));
   }
-
+  //
   let reverseStr = reverseArr.join("");
-  console.log(str.replace(/[^a-zA-Z0-9]/gi, "").toLowerCase());
-  console.log(reverseStr.replace(/[^a-zA-Z0-9]/gi, "").toLowerCase());
+
   return (
     reverseStr.replace(/[^a-zA-Z0-9]/gi, "").toLowerCase() ===
     str.replace(/[^a-zA-Z0-9]/gi, "").toLowerCase()
