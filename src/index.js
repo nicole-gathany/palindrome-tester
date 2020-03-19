@@ -4,9 +4,7 @@ function palindrome(str) {
   for (let i = 0; i < str.length; i++) {
     reverseArr.unshift(str.charAt(i));
   }
-  //
   let reverseStr = reverseArr.join("");
-
   return (
     reverseStr.replace(/[^a-zA-Z0-9]/gi, "").toLowerCase() ===
     str.replace(/[^a-zA-Z0-9]/gi, "").toLowerCase()
